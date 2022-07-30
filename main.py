@@ -12,7 +12,7 @@ for job in jobs:
     if 'few' in published_date:
         company_name = job.find('h3',class_ = 'joblist-comp-name').text.replace(' ','')
         skills = job.find('span',class_ = 'srp-skills').text.replace(' ','')
-        print(f"Company Name: {company_name.strip()} Skills: {skills.strip()} Published: {published_date.strip()}")
+        print(f"Company Name: {company_name.strip()} | Skills: {skills.strip()}  | Published: {published_date.strip()}")
 
     print('')
 
